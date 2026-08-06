@@ -1,0 +1,5 @@
+name: sample-service
+version: "1.0"
+engine: cookiecutter
+required_files:
+  - README.md

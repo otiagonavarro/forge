@@ -1,0 +1,5 @@
+name: comp-b
+version: "1.0"
+files: []
+depends_on:
+  - comp-a

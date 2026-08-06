@@ -1,0 +1,6 @@
+name: broken-hook
+version: "1.0"
+files:
+  - templates/broken.py
+hooks:
+  after_install: hooks.after_install

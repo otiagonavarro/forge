@@ -1,0 +1,11 @@
+name: logging
+version: "1.0"
+dependencies:
+  - structlog
+variables: []
+files:
+  - templates/logging_client.py
+depends_on:
+  - secret-manager
+hooks:
+  after_install: hooks.after_install

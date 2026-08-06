@@ -1,0 +1,32 @@
+[project]
+name = "forge"
+version = "0.1.0"
+description = "Plataforma de engenharia para geração de projetos GCP a partir de Blueprints e Components"
+requires-python = ">=3.11"
+dependencies = [
+    "cookiecutter>=2.6",
+    "pyyaml>=6.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+forge = "cli.main:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools]
+packages = ["domain", "agents", "actions", "engines", "cli", "infrastructure"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

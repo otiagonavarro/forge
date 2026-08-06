@@ -1,0 +1,8 @@
+name: secret-manager
+version: "1.0"
+dependencies:
+  - google-cloud-secret-manager
+variables:
+  - GCP_PROJECT_ID
+files:
+  - templates/secret_manager_client.py
